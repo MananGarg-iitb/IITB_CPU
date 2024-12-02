@@ -116,9 +116,9 @@ begin
 	M3: mux_16_2_1 port map (b => RF_d2, a => RF_d1, Y => T2_d, sel => w10);
 	M4: mux_16_4_1 port map (d => PC_q, c => T1_q, b => SE_out, a => x"0000", Y => RF_d3, 
 								sel(1) => w4, sel(0) => w5);
-	M5: mux_16_4_1 port map (d => PC_q, c => x"0007", b => T2_q, a => x"0000", Y => ALU_a, 
+	M5: mux_16_4_1 port map (d => PC_q, c => x"0007", b => T2_q, a => T1_q, Y => ALU_a, 
 								sel(1) => w6, sel(0) => w7);
-	M6: mux_16_4_1 port map (d => x"0001", c => T1_q, b => SE_out, a => x"0000", Y => ALU_b, 
+	M6: mux_16_4_1 port map (d => x"0001", c => T1_q, b => SE_out, a => T2_q, Y => ALU_b, 
 								sel(1) => w8, sel(0) => w9);
 	RF: Register_File port map (en => RF_enable, addr_r1 => IR_q(11 downto 9), addr_r2 => IR_q(8 downto 6),
 								addr_w => RF_a3, data_out1 => RF_d1, data_out2 => RF_d2, data_in => RF_d3, clk => pro_clock, 
@@ -183,7 +183,7 @@ begin
 	case y_present is
 	
 	 when S0 =>
-	   if (mem_data_out(15 downto 12)="0000" or mem_data_out(15 downto 12)="0010" or mem_data_out(15 downto 12)="0011" or mem_data_out(15 downto 12)="0100" or mem_data_out(15 downto 12)="0101" or mem_data_out(15 downto 12)="0110") then --addsub
+	   if (mem_data_out(15 downto 12)="0000" or mem_data_out(15 downto 12)="1100" or mem_data_out(15 downto 12)="0010" or mem_data_out(15 downto 12)="0011" or mem_data_out(15 downto 12)="0100" or mem_data_out(15 downto 12)="0101" or mem_data_out(15 downto 12)="0110") then --addsub
 			y_next<=s1;
 		elsif (mem_data_out(15 downto 12)="0001") then --adi
 			y_next<=s4;
@@ -195,8 +195,6 @@ begin
 			y_next<=s10;
 		elsif (mem_data_out(15 downto 12)="1011") then --sw
 			y_next<=s10;
-		elsif (mem_data_out(15 downto 12)="1100") then --beq
-			y_next<=s13;
 		elsif (mem_data_out(15 downto 12)="1110") then --j
 			y_next<=s16;
 		elsif (mem_data_out(15 downto 12)="1101") then --jal
@@ -207,7 +205,10 @@ begin
 		end if;
 		
 	 when s1 =>
-	    y_next<=s2;
+		if (IR_q(15 downto 12)="1100") then
+			y_next <= s14;
+	    else y_next<=s2;
+		 end if;
 		 
 	 when s2 =>
 	    y_next<=s3;
@@ -254,7 +255,7 @@ begin
 
 	 when s14 =>
 		if(z='1') then
-			y_next<=s15;
+			y_next<=s16;
 		else
 			y_next<=s0;
 		end if;
@@ -265,6 +266,8 @@ begin
 	 when s16 => -- left
 	   if(IR_q(15 downto 12)="1110") then
 			y_next<=s17;
+		elsif(IR_q(15 downto 12)="1100") then
+			y_next<=s15;
 		elsif(IR_q(15 downto 12)="1101") then
 			y_next<=s18;
 		else y_next<=s0;
@@ -357,8 +360,8 @@ begin
         w12 <= '0';
         w13 <= '0';
             T1_enable <= '1';
-            w7 <= '1';
-            w8 <= '1';
+            w7 <= '0';
+            w8 <= '0';
             w2 <= '1';
             ALU_ctrl <= IR_q(14 downto 12);  -- Add the specific ALU control value
 
@@ -606,13 +609,13 @@ begin
 		  mem_read <= '0';
         mem_write <= '0';
         IR_enable <= '0';
-        PC_enable <= '0';
+        PC_enable <= '1';
         RF_enable <= '0';
         w0 <= '0';
         w3 <= '0';
         w4 <= '0';
         w5 <= '0';
-        w10 <= '0';
+        w10 <= '1';
         w11 <= '0';
         w12 <= '0';
         w13 <= '0';
@@ -624,7 +627,7 @@ begin
             w7 <= '1';
             w8 <= '1';
             w9 <= '1';
-            ALU_ctrl <= "000";  -- Add ALU control value
+            ALU_ctrl <= "010";  -- Add ALU control value
 
         when S14 =>
 		  mem_read <= '0';
@@ -750,7 +753,7 @@ begin
 		  mem_read <= '0';
         mem_write <= '0';
         IR_enable <= '0';
-        PC_enable <= '0';
+        PC_enable <= '1';
         T1_enable <= '0';
         T2_enable <= '0';
         w0 <= '0';

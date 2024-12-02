@@ -12,29 +12,29 @@
 # 
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:33 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux_reg
 # -- Compiling architecture structural of mux_reg
-# End time: 20:07:33 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:06 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:33 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity demux_1to8
 # -- Compiling architecture structural of demux_1to8
-# End time: 20:07:33 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:06 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:33 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,11 +56,11 @@
 # -- Compiling architecture Equations of XNOR_2
 # -- Compiling entity HALF_ADDER
 # -- Compiling architecture Equations of HALF_ADDER
-# End time: 20:07:33 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:06 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:33 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,11 +68,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture behavioral of alu
-# End time: 20:07:33 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:06 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -80,11 +80,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity sign_extension
 # -- Compiling architecture Behavioral of sign_extension
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:06 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -92,22 +92,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture behav of memory
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:06 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:06 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity D_flop
 # -- Compiling architecture Bhv of D_flop
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -115,11 +115,11 @@
 # -- Loading package Gates
 # -- Compiling entity FullAdder_NAND
 # -- Compiling architecture struct of FullAdder_NAND
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -127,11 +127,11 @@
 # -- Loading package Gates
 # -- Compiling entity multiplier_4x4
 # -- Compiling architecture struct of multiplier_4x4
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -139,11 +139,11 @@
 # -- Loading package Gates
 # -- Compiling entity n_bit_adder_subtractor
 # -- Compiling architecture struct of n_bit_adder_subtractor
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -151,11 +151,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_4_2
 # -- Compiling architecture struct of mux_4_2
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -163,11 +163,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_2_1
 # -- Compiling architecture struct of mux_2_1
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -176,11 +176,11 @@
 # -- Loading package Gates
 # -- Compiling entity top
 # -- Compiling architecture bhv of top
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -188,11 +188,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_16_4_1
 # -- Compiling architecture struct of mux_16_4_1
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -200,11 +200,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_16_2_1
 # -- Compiling architecture struct of mux_16_2_1
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -212,11 +212,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_3_4_1
 # -- Compiling architecture struct of mux_3_4_1
-# End time: 20:07:34 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:34 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -224,11 +224,11 @@
 # -- Loading package Gates
 # -- Compiling entity reg16
 # -- Compiling architecture struct of reg16
-# End time: 20:07:35 on Dec 02,2024, Elapsed time: 0:00:01
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:35 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -236,11 +236,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_8_3
 # -- Compiling architecture struct of mux_8_3
-# End time: 20:07:35 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:35 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -248,11 +248,11 @@
 # -- Loading package Gates
 # -- Compiling entity mux_16_8_1
 # -- Compiling architecture struct of mux_16_8_1
-# End time: 20:07:35 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:07 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:35 on Dec 02,2024
+# Start time: 04:24:07 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -264,12 +264,12 @@
 # -- Loading package Gates
 # -- Loading entity reg16
 # -- Loading entity mux_reg
-# End time: 20:07:35 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:08 on Dec 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:07:35 on Dec 02,2024
+# Start time: 04:24:08 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -277,12 +277,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Testbench
 # -- Compiling architecture bhv of Testbench
-# End time: 20:07:35 on Dec 02,2024, Elapsed time: 0:00:00
+# End time: 04:24:08 on Dec 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 20:07:35 on Dec 02,2024
+# Start time: 04:24:08 on Dec 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -313,7 +313,7 @@
 # Loading work.half_adder(equations)
 # Loading work.mux_16_8_1(struct)
 # Loading work.mux_8_3(struct)
-# ** Warning: Design size of 33627 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 33694 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # 
 # add wave *
@@ -326,20 +326,16 @@
 #    Time: 0 ps  Iteration: 1  Instance: /testbench/DUT/mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 2  Instance: /testbench/DUT/mem
-add wave -position end  sim:/testbench/DUT/mem/memory
-add wave -position end  sim:/testbench/DUT/RF/reg_outputs
+add wave -position 5  sim:/testbench/DUT/mem/memory
 restart
-# ** Warning: Design size of 31907 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 31905 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /testbench/DUT/mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 2  Instance: /testbench/DUT/mem
 # Break key hit
 # Simulation stop requested.
-# End time: 20:16:22 on Dec 02,2024, Elapsed time: 0:08:47
+# End time: 04:26:39 on Dec 03,2024, Elapsed time: 0:02:31
 # Errors: 0, Warnings: 6

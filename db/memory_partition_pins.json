@@ -836,6 +836,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "mem_init_addr[5]",
+					"strict" : false
+				},
+				{
 					"name" : "mem_init_data[1]",
 					"strict" : false
 				},

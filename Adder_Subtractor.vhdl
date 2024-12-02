@@ -30,6 +30,6 @@ begin
 		b2 : FullAdder_NAND port map (A => a(i), B => x(i), C_i => c(i-1), S => s(i), C_o => c(i));
 	end generate ;
 	
-	c_out <= c(15);
+	c_out <= c(15) and (not m);
 	
 end architecture struct;

@@ -1,0 +1,36 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd}
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd}
+
+vcom -93 -work work {C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Testbench
+
+add wave *
+view structure
+view signals
+run 100 us

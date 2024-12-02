@@ -45,10 +45,10 @@ architecture behavioral of alu is
     function shift(x : std_logic_vector(15 downto 0)) return std_logic_vector is
         variable res : std_logic_vector(15 downto 0);
     begin
-        for i in 0 to 8 loop
-            res(i + 7) := x(i);
+        for i in 0 to 7 loop
+            res(i + 8) := x(i);
         end loop;
-        res(6 downto 0) := "0000000";  
+        res(7 downto 0) := "00000000";  
         return res;
     end function;
 
@@ -77,7 +77,7 @@ end component multiplier_4x4;
 	end component mux_16_8_1;
 
 	signal t1, t2, t3, t4, t5, t6, t7, result_t : std_logic_vector(15 downto 0);
-
+	signal c_temp : std_logic;
 begin
 	
 	t1 <= logic_and(a,b);
@@ -87,7 +87,8 @@ begin
 	t7 <= t5;
 	result <= result_t;
 	
-	RCAS : n_bit_adder_subtractor port map (a => a, b => b, m => alu_ctrl(1), s => t5, c_out => c);
+	RCAS : n_bit_adder_subtractor port map (a => a, b => b, m => alu_ctrl(1), s => t5, c_out => c_temp);
+	c <= c_temp and (not (alu_ctrl(2) or alu_ctrl(1) or alu_ctrl(0)));
 	Mult : multiplier_4x4 port map (a => a(3 downto 0), b => b(3 downto 0), m => t6);
 	
 	mux : mux_16_8_1 port map(a => t5, b => x"0000", c => t7, d => t6, e => t1, f => t2, g => t3, h => t4, sel => alu_ctrl, Y => result_t);
