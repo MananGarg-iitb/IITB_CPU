@@ -13,25 +13,29 @@ end entity;
 
 architecture Behavioral of sign_extension is
 begin
-    process(clk)
+    process(IR_6, IR_9, w13)
     begin
             if w13 = '1' then
                 -- Sign-extend signal_one to 16 bits
                 if IR_6(5) = '1' then
                     -- MSB is 1, extend with 1s
-                    output_signal <= (9 downto 0 => '1') & IR_6;
+                    output_signal(15 downto 6) <= "1111111111";
+						  output_signal(5 downto 0) <= IR_6;
                 else
                     -- MSB is 0, extend with 0s
-                    output_signal <= (9 downto 0 => '0') & IR_6;
+						  output_signal(15 downto 6) <= "0000000000";
+                    output_signal(5 downto 0) <= IR_6;
                 end if;
             else
                 -- Sign-extend signal_two to 16 bits
                 if IR_9(8) = '1' then
                     -- MSB is 1, extend with 1s
-                    output_signal <= (6 downto 0 => '1') & IR_9;
+						  output_signal(15 downto 9) <= "1111111";
+                    output_signal(8 downto 0) <= IR_9;
                 else
                     -- MSB is 0, extend with 0s
-                    output_signal <= (6 downto 0 => '0') & IR_9;
+                    output_signal(15 downto 9) <= "0000000";
+                    output_signal(8 downto 0) <= IR_9;
                 end if;
             end if;
     end process;

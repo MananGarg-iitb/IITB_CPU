@@ -8,37 +8,37 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/manan/Documents/EE214/EE224_CPU/simulation/modelsim
-Ememory
-Z1 w1732899191
+Ealu
+Z1 w1733113988
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd
-Z6 FC:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd
+Z5 8C:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl
+Z6 FC:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl
 l0
-L5
-Vz0SC7EiRk=9j2da`T@LZ@2
-!s100 o0]MG0hT`:KHL7lb]g4hP1
+L6
+VOYTT_c<7YD31fKGFfV6DN2
+!s100 KP_h22CPIclFELK?_U73d2
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1732901600
+Z8 !s110 1733150253
 !i10b 1
-Z9 !s108 1732901600.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd|
-Z11 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd|
+Z9 !s108 1733150253.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl|
+Z11 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/alu.vhdl|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
-Abehav
+Abehavioral
 R2
 R3
 R4
-DEx4 work 6 memory 0 22 z0SC7EiRk=9j2da`T@LZ@2
-l16
-L13
-V81]=nfKTcTfPS2K_5dlm;1
-!s100 95?CK]bOkmRXYl>^ifDeW2
+DEx4 work 3 alu 0 22 OYTT_c<7YD31fKGFfV6DN2
+l81
+L16
+V:41B2d4QzLY4P_QfJ:[B93
+!s100 @DjW62eV;oWMXJ1bYz;VO0
 R7
 31
 R8
@@ -49,25 +49,975 @@ R11
 !i113 1
 R12
 R13
-Etestbench
-Z14 w1732901584
+Eand_2
+Z14 w1722860729
+R3
+R4
+R0
+Z15 8C:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl
+Z16 FC:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl
+l0
+L57
+VW2QdRhzH^gh`1Z4bifmBf3
+!s100 <1nD4fLK5FZ?LMSb4GDe>3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl|
+Z18 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/Gates.vhdl|
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 and_2 0 22 W2QdRhzH^gh`1Z4bifmBf3
+l62
+L61
+VnDT8d]LGAGAW:`<`mSSSg3
+!s100 HhM:H^IAkB>a2X9?`<@_k0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ed_flop
+Z19 w1733148366
+R3
+R4
+R0
+Z20 8C:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd
+Z21 FC:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd
+l0
+L4
+VShCB<2I7JQIO=MO?0`X^S0
+!s100 ?U0`K>IT@1@Y@o6mJnJIJ1
+R7
+31
+Z22 !s110 1733150254
+!i10b 1
+Z23 !s108 1733150254.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd|
+Z25 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/D_flop.vhd|
+!i113 1
+R12
+R13
+Abhv
+R3
+R4
+DEx4 work 6 d_flop 0 22 ShCB<2I7JQIO=MO?0`X^S0
+l10
+L8
+VnQ7U_<7JOmR2C2:`9FK;50
+!s100 A3RFn4z_WCCi:^8hG_C^n0
+R7
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Edemux_1to8
+Z26 w1733149973
+R3
+R4
+R0
+Z27 8C:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd
+Z28 FC:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd
+l0
+L4
+VCLO6W8gYWeE7@]Fl@cH8a1
+!s100 3I;j10V1eK=1jUKU9WOiV1
+R7
+31
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd|
+Z30 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/demux_1to8.vhd|
+!i113 1
+R12
+R13
+Astructural
+R3
+R4
+Z31 DEx4 work 10 demux_1to8 0 22 CLO6W8gYWeE7@]Fl@cH8a1
+l15
+L12
+VBGH?TXShImJIQ]0TCM@?X0
+!s100 aISj=SIehE1H[5XlROfk=3
+R7
+31
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Efulladder_nand
+Z32 w1733067428
+Z33 DPx4 work 5 gates 0 22 NcY4A7TbR^WLRT`2c:]N[1
+R3
+R4
+R0
+Z34 8C:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl
+Z35 FC:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl
+l0
+L6
+VcWbAmj;8iADg]DW?[g7@F2
+!s100 [B:OWT`[ACcL4Q<QE:f3]2
+R7
+31
+R22
+!i10b 1
+R23
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl|
+Z37 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/FullAdder.vhdl|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 14 fulladder_nand 0 22 cWbAmj;8iADg]DW?[g7@F2
+l12
+L10
+V^CC76@an@AfSVj<bing=H0
+!s100 PEYZ8T:Zz^RIgJUYKaOef1
+R7
+31
+R22
+!i10b 1
+R23
+R36
+R37
+!i113 1
+R12
+R13
+Pgates
+R3
+R4
+R14
+R0
+R15
+R16
+l0
+L7
+VNcY4A7TbR^WLRT`2c:]N[1
+!s100 Dc>f1MeC:9iI_HnNzJ;KT1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ehalf_adder
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L124
+VIZiX8mi96cJ??CnPO^U<C3
+!s100 U;nQkfQTnI7V?fejYIM<g2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 10 half_adder 0 22 IZiX8mi96cJ??CnPO^U<C3
+l129
+L128
+VCD;QIVbkQ<kd@U[I6UILl1
+!s100 E9g6H`e<YSE@nSQ7XJJ0D0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Einverter
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L45
+V^STYmNzH_F58ZVT>FF?cU2
+!s100 S3joTbdXW90XOjU4i1V^60
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 8 inverter 0 22 ^STYmNzH_F58ZVT>FF?cU2
+l50
+L49
+VY38KWB:XEkc0^3YzW57dj2
+!s100 YS6CiXJRJ@EE5??nNB03h1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ememory
+Z38 w1733146402
 R2
 R3
 R4
 R0
-Z15 8C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd
-Z16 FC:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd
+Z39 8C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd
+Z40 FC:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd
+l0
+L5
+VW47hA2<o;3O0l@1EFhK8;3
+!s100 D5k8gllaF8WInY[a4Yjf33
+R7
+31
+R22
+!i10b 1
+R23
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd|
+Z42 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/memory.vhd|
+!i113 1
+R12
+R13
+Abehav
+R2
+R3
+R4
+DEx4 work 6 memory 0 22 W47hA2<o;3O0l@1EFhK8;3
+l16
+L13
+VYZV]_YniiBgH:B:`g>d062
+!s100 kajPmRVEXh7ALk]>]2Hen0
+R7
+31
+R22
+!i10b 1
+R23
+R41
+R42
+!i113 1
+R12
+R13
+Emultiplier_4x4
+Z43 w1733084745
+R33
+R3
+R4
+R0
+Z44 8C:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl
+Z45 FC:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl
+l0
+L7
+VHMOoXS;PndmF[e^[1YV`<2
+!s100 L_Gz22RahmaC^cE[V4e_[0
+R7
+31
+R22
+!i10b 1
+R23
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl|
+Z47 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/multiplier.vhdl|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 14 multiplier_4x4 0 22 HMOoXS;PndmF[e^[1YV`<2
+l24
+L14
+Vl:X<F^R>P7oC:n@7AdL8l2
+!s100 lM=e]^Vz3EKfmX2hW9P7h1
+R7
+31
+R22
+!i10b 1
+R23
+R46
+R47
+!i113 1
+R12
+R13
+Emux_16_2_1
+Z48 w1732989663
+R33
+R3
+R4
+R0
+Z49 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd
+Z50 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd
+l0
+L7
+VQf^RS7[AZj5f`5UnA6ac03
+!s100 7Y0S067dYPAFG:0^ZkcRb3
+R7
+31
+R22
+!i10b 1
+R23
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd|
+Z52 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_2_1.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 10 mux_16_2_1 0 22 Qf^RS7[AZj5f`5UnA6ac03
+l20
+L16
+VJ8VmQ[L;0f:6^25CaAD;@0
+!s100 dMLUU?3kL8oC8VR^2mSKH1
+R7
+31
+R22
+!i10b 1
+R23
+R51
+R52
+!i113 1
+R12
+R13
+Emux_16_4_1
+Z53 w1732989554
+R33
+R3
+R4
+R0
+Z54 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd
+Z55 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd
+l0
+L7
+VCVYFiSQBRBYk[R`0>1CBF3
+!s100 K3OTXOZ]cm0DNjD:QzL:F0
+R7
+31
+R22
+!i10b 1
+R23
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd|
+Z57 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_4_1.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 10 mux_16_4_1 0 22 CVYFiSQBRBYk[R`0>1CBF3
+l20
+L16
+VhQQmKMSD@3G]n]Ld1>E5c3
+!s100 Xo3`D`Z6KJP[;F]RZk<Y50
+R7
+31
+R22
+!i10b 1
+R23
+R56
+R57
+!i113 1
+R12
+R13
+Emux_16_8_1
+Z58 w1733080282
+R33
+R3
+R4
+R0
+Z59 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd
+Z60 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd
+l0
+L7
+VQ;Lo`5Ib5l_Mof91[iE7h0
+!s100 [97`[I9[_TXS49@:n2I=M0
+R7
+31
+Z61 !s110 1733150255
+!i10b 1
+Z62 !s108 1733150255.000000
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd|
+Z64 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_16_8_1.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 10 mux_16_8_1 0 22 Q;Lo`5Ib5l_Mof91[iE7h0
+l20
+L16
+V[L?kGES3A[7JCOhIgL0V]1
+!s100 RM:lLLTNf_DZ2a0jbIk0J1
+R7
+31
+R61
+!i10b 1
+R62
+R63
+R64
+!i113 1
+R12
+R13
+Emux_2_1
+Z65 w1732989013
+R33
+R3
+R4
+R0
+Z66 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd
+Z67 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd
+l0
+L7
+V^WD<aVRo:HePM@IS1Njn<1
+!s100 Ml0I4Qz6Mke2Gd5XVgID`1
+R7
+31
+R22
+!i10b 1
+R23
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd|
+Z69 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_2_1.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 7 mux_2_1 0 22 ^WD<aVRo:HePM@IS1Njn<1
+l14
+L12
+V;Bg]7fBGjYMLIzA3alonP3
+!s100 gn8:9R5nYha5l_9lBg71X1
+R7
+31
+R22
+!i10b 1
+R23
+R68
+R69
+!i113 1
+R12
+R13
+Emux_3_4_1
+Z70 w1732989765
+R33
+R3
+R4
+R0
+Z71 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd
+Z72 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd
+l0
+L7
+Va^Fl<Ufib6W=nC=oHC>IE2
+!s100 _DVk5PoL=6n]S?@HP=ON51
+R7
+31
+R22
+!i10b 1
+R23
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd|
+Z74 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_3_4_1.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 9 mux_3_4_1 0 22 a^Fl<Ufib6W=nC=oHC>IE2
+l20
+L16
+V:lV7ID^hz:>4W9Xe6?EzV3
+!s100 iGDTb:@HIkjeXL9MlfDYb1
+R7
+31
+R22
+!i10b 1
+R23
+R73
+R74
+!i113 1
+R12
+R13
+Emux_4_2
+Z75 w1724774601
+R33
+R3
+R4
+R0
+Z76 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd
+Z77 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd
+l0
+L7
+VYEdWZc60:ldH^jZNKQk:X3
+!s100 cYnehn<NV68M9[37efEI22
+R7
+31
+R22
+!i10b 1
+R23
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd|
+Z79 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_4_2.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 7 mux_4_2 0 22 YEdWZc60:ldH^jZNKQk:X3
+l16
+L11
+V2=0l0>lA[o:G3f?7[5a1M0
+!s100 gmUUNXAYM;NG<^CAnVdWe3
+R7
+31
+R22
+!i10b 1
+R23
+R78
+R79
+!i113 1
+R12
+R13
+Emux_8_3
+Z80 w1733080115
+R33
+R3
+R4
+R0
+Z81 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd
+Z82 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd
+l0
+L7
+VE_Ql[mFGTTOj<EM`bh3S_0
+!s100 i4IPo4BJE`4^iFI14>Qi@0
+R7
+31
+R61
+!i10b 1
+R62
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd|
+Z84 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_8_3.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 7 mux_8_3 0 22 E_Ql[mFGTTOj<EM`bh3S_0
+l20
+L11
+VSUd_EVfLSLgO`A7mD3^f@1
+!s100 5i0oD23HM]_ac>;o2ik193
+R7
+31
+R61
+!i10b 1
+R62
+R83
+R84
+!i113 1
+R12
+R13
+Emux_reg
+R26
+R3
+R4
+R0
+Z85 8C:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd
+Z86 FC:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd
+l0
+L4
+VQ4f[0[ea_B:4bmoioa^a90
+!s100 DkBWP38GlEC^1NHc>MQVf1
+R7
+31
+R8
+!i10b 1
+R9
+Z87 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd|
+Z88 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/mux_reg.vhd|
+!i113 1
+R12
+R13
+Astructural
+R3
+R4
+Z89 DEx4 work 7 mux_reg 0 22 Q4f[0[ea_B:4bmoioa^a90
+l15
+L12
+VmeV`F2[eVTH5?Zc9]Q[@]2
+!s100 7U=obZFJKfXhzJDGZCehc1
+R7
+31
+R8
+!i10b 1
+R9
+R87
+R88
+!i113 1
+R12
+R13
+En_bit_adder_subtractor
+Z90 w1733085449
+R33
+R3
+R4
+R0
+Z91 8C:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl
+Z92 FC:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl
+l0
+L6
+Ve?FMoOo^BU?e8MWc]_BQk1
+!s100 _`;L5S2U4TIZ2YPM01>:90
+R7
+31
+R22
+!i10b 1
+R23
+Z93 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl|
+Z94 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/Adder_Subtractor.vhdl|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+DEx4 work 22 n_bit_adder_subtractor 0 22 e?FMoOo^BU?e8MWc]_BQk1
+l23
+L15
+VhS2>Xz_6jSQYPCj9Q^ZSF3
+!s100 `3^z1Dl?A;_D7_]B0L9;c0
+R7
+31
+R22
+!i10b 1
+R23
+R93
+R94
+!i113 1
+R12
+R13
+Enand_2
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L68
+V7Q=aZ>7Mzize[[IfQRQ;`2
+!s100 bRA[c>EJKJWNgCR8ghUC72
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 6 nand_2 0 22 7Q=aZ>7Mzize[[IfQRQ;`2
+l73
+L72
+V?4CWin9:[TT0?g`jLS0E12
+!s100 I_RPhB=oe82f_Rij[[8JF2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Enor_2
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L90
+V3?]TGiHba`>]BD;kULm?^3
+!s100 edYUJ4gTm_U:i]N@4Q=Gg3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 nor_2 0 22 3?]TGiHba`>]BD;kULm?^3
+l95
+L94
+VNFd;eVo`>0To8@;Oh4diC1
+!s100 ESBi5;Q?X6mLo`Q3JWZ4Q0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eor_2
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L79
+V>IC]i[S3fUX<m=i^H@9eA0
+!s100 Be23a45mg=gMiVXM<6Peg0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 4 or_2 0 22 >IC]i[S3fUX<m=i^H@9eA0
+l84
+L83
+VATF[^b3mj8cbo9?98=TRF0
+!s100 8JcIMFHmJzkaC?5jW]DnS3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ereg16
+Z95 w1733084603
+R33
+R3
+R4
+R0
+Z96 8C:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd
+Z97 FC:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd
+l0
+L7
+V03>b<?`?FZFcZ8G:b]mFl1
+!s100 QiCVj3Ko<[TL9CX593BOl2
+R7
+31
+R61
+!i10b 1
+R23
+Z98 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd|
+Z99 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/reg16.vhd|
+!i113 1
+R12
+R13
+Astruct
+R33
+R3
+R4
+Z100 DEx4 work 5 reg16 0 22 03>b<?`?FZFcZ8G:b]mFl1
+l20
+L16
+VaVk0MnAY`AE_GGY9ZaUh?2
+!s100 aYEAl=J54gZna>4>80Sc50
+R7
+31
+R61
+!i10b 1
+R23
+R98
+R99
+!i113 1
+R12
+R13
+Eregister_file
+Z101 w1733149980
+R2
+R3
+R4
+R0
+Z102 8C:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd
+Z103 FC:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd
+l0
+L5
+VdakQ[2MdW9AUP2f3gLGZ=3
+!s100 LcZ3]@jXg^`5mezaM8dAi2
+R7
+31
+R61
+!i10b 1
+R62
+Z104 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd|
+Z105 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/register_file.vhd|
+!i113 1
+R12
+R13
+Astruct
+R89
+R33
+R100
+R31
+R2
+R3
+R4
+DEx4 work 13 register_file 0 22 dakQ[2MdW9AUP2f3gLGZ=3
+l25
+L19
+V5VUYiW=U9N_LWKMS5l>j@2
+!s100 3E3h?`T_O3VKWalJgOX7>0
+R7
+31
+R61
+!i10b 1
+R62
+R104
+R105
+!i113 1
+R12
+R13
+Esign_extension
+Z106 w1733114736
+R2
+R3
+R4
+R0
+Z107 8C:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd
+Z108 FC:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd
+l0
+L5
+VEX;gS;g5;XIcLEFV]?;hb3
+!s100 OL1NHb0Vm>aTKo9`^P5NV1
+R7
+31
+R22
+!i10b 1
+R23
+Z109 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd|
+Z110 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/sign_extension.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 14 sign_extension 0 22 EX;gS;g5;XIcLEFV]?;hb3
+l15
+L14
+V63@OenDd@>eUbS:lTCzio0
+!s100 InHRgHk?@^aW:hk2S30PW0
+R7
+31
+R22
+!i10b 1
+R23
+R109
+R110
+!i113 1
+R12
+R13
+Etestbench
+Z111 w1733148565
+R2
+R3
+R4
+R0
+Z112 8C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd
+Z113 FC:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd
 l0
 L5
 VedF5b;_VA<_3i^S7BX5I[0
 !s100 iN;k_KWWV`2WeEIA<hb501
 R7
 31
-Z17 !s110 1732901601
+R61
 !i10b 1
-Z18 !s108 1732901601.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd|
-Z20 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd|
+R62
+Z114 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd|
+Z115 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/Testbench.vhd|
 !i113 1
 R12
 R13
@@ -76,17 +1026,138 @@ R2
 R3
 R4
 DEx4 work 9 testbench 0 22 edF5b;_VA<_3i^S7BX5I[0
-l23
+l28
 L8
-V4K]BmdcPiiT:ZJ[bm[ckg1
-!s100 <cWI8e]BFOhhVF`]k0[FW1
+VW6TY;V^7o18PD`Yo`zdUX3
+!s100 DSk9?7e1Y`D^ZAK3989A_0
 R7
 31
-R17
+R61
 !i10b 1
+R62
+R114
+R115
+!i113 1
+R12
+R13
+Etop
+Z116 w1733150157
+R33
+R2
+R3
+R4
+R0
+Z117 8C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd
+Z118 FC:/Users/manan/Documents/EE214/EE224_CPU/top.vhd
+l0
+L8
+VbgDPi?0hok2Ri^0j>P15J3
+!s100 V@;KKgaM:Lj[G2eJN4[<N3
+R7
+31
+R22
+!i10b 1
+R23
+Z119 !s90 -reportprogress|300|-93|-work|work|C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd|
+Z120 !s107 C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd|
+!i113 1
+R12
+R13
+Abhv
+R33
+R2
+R3
+R4
+DEx4 work 3 top 0 22 bgDPi?0hok2Ri^0j>P15J3
+l104
+L19
+VRET:ENInONJmLnAMl;RYV2
+!s100 zn?6G<>Vic@5T9Wb696GX3
+R7
+31
+R22
+!i10b 1
+R23
+R119
+R120
+!i113 1
+R12
+R13
+Exnor_2
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L113
+VYmZa`=[Sj]6Zh9_O7]F;L0
+!s100 SMA^OIVGhoiKW^3FaJ8oW3
+R7
+31
+R8
+!i10b 1
+R9
+R17
 R18
-R19
-R20
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 6 xnor_2 0 22 YmZa`=[Sj]6Zh9_O7]F;L0
+l118
+L117
+VAJO?a^^jGBIX`G]K^jl@P2
+!s100 =aKk4IJ>H;6]KzcaGm^Mn0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Exor_2
+R14
+R3
+R4
+R0
+R15
+R16
+l0
+L102
+VDUd5fH`?6?dZ[>AnHc54;2
+!s100 h::V4HH0c4?lKoYnW6M?E3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 xor_2 0 22 DUd5fH`?6?dZ[>AnHc54;2
+l107
+L106
+VT`Lnd3[S1KOT?Q^d?zomG2
+!s100 85OK8@mo8d3=fmz<5BnRf2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
 !i113 1
 R12
 R13

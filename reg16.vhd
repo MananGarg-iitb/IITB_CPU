@@ -21,7 +21,7 @@ begin
 
 n16_bit : for i in 0 to 15 generate
 	lsb: if i < 16 generate
-		b2: D_flop port map (clk => clk, rst => rst, en => en D => D(i), Q => Q(i));
+		b2: D_flop port map (clk => clk, rst => rst, en => en, D => D(i), Q => Q(i));
 	end generate lsb;
 end generate ;
 end struct;

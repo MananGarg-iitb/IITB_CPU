@@ -22,23 +22,17 @@ begin
 			end loop;
 
 		elsif rising_edge(mem_clk) then
-			if mem_write = '1' then
-				if init = '1' then
+			if init = '1' then
 					memory(to_integer(unsigned(mem_addr_init(4 downto 0)))) <= mem_data_init;
-				else
+			else
+				if mem_write = '1' then
 					memory(to_integer(unsigned(mem_addr(4 downto 0)))) <= mem_data_in;
 				end if;
 			end if;
 		end if;
 	end process;
 
-	mem_rd: process (mem_addr, mem_read)
-	begin
-		if mem_read = '1' then
-			mem_data_out <= memory(to_integer(unsigned(mem_addr(4 downto 0))));
-		else
-			mem_data_out <= (others => '0');
-		end if;
-	end process;
+	mem_data_out <= memory(to_integer(unsigned(mem_addr(4 downto 0)))) when mem_read = '1' else (others => '0');
+
 
 end behav;
