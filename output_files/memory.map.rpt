@@ -1,5 +1,5 @@
 Analysis & Synthesis report for memory
-Tue Dec 03 04:23:53 2024
+Thu Dec 05 00:08:27 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -50,13 +50,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 03 04:23:53 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 05 00:08:27 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; memory                                      ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,744                                       ;
-;     Total combinational functions  ; 1,624                                       ;
+; Total logic elements               ; 2,742                                       ;
+;     Total combinational functions  ; 1,622                                       ;
 ;     Dedicated logic registers      ; 1,235                                       ;
 ; Total registers                    ; 1235                                        ;
 ; Total pins                         ; 234                                         ;
@@ -168,8 +168,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -207,16 +207,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 2,744       ;
+; Estimated Total logic elements              ; 2,742       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1624        ;
+; Total combinational functions               ; 1622        ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 1441        ;
-;     -- 3 input functions                    ; 164         ;
+;     -- 3 input functions                    ; 162         ;
 ;     -- <=2 input functions                  ; 19          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1624        ;
+;     -- normal mode                          ; 1622        ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 1235        ;
@@ -229,7 +229,7 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 1230        ;
-; Total fan-out                               ; 11648       ;
+; Total fan-out                               ; 11642       ;
 ; Average fan-out                             ; 3.50        ;
 +---------------------------------------------+-------------+
 
@@ -239,8 +239,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                     ; Entity Name            ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------+------------------------+--------------+
-; |top                                   ; 1624 (79)           ; 1235 (19)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 234  ; 0            ; 0          ; |top                                                                                    ; top                    ; work         ;
-;    |alu:alu_m|                         ; 172 (2)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m                                                                          ; alu                    ; work         ;
+; |top                                   ; 1622 (79)           ; 1235 (19)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 234  ; 0            ; 0          ; |top                                                                                    ; top                    ; work         ;
+;    |alu:alu_m|                         ; 171 (4)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m                                                                          ; alu                    ; work         ;
 ;       |multiplier_4x4:Mult|            ; 29 (4)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|multiplier_4x4:Mult                                                      ; multiplier_4x4         ; work         ;
 ;          |FullAdder_NAND:fa1|          ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|multiplier_4x4:Mult|FullAdder_NAND:fa1                                   ; FullAdder_NAND         ; work         ;
 ;             |OR_2:inst7|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|multiplier_4x4:Mult|FullAdder_NAND:fa1|OR_2:inst7                        ; OR_2                   ; work         ;
@@ -271,7 +271,7 @@ refer to the applicable agreement for further details.
 ;          |HALF_ADDER:ha1|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|multiplier_4x4:Mult|HALF_ADDER:ha1                                       ; HALF_ADDER             ; work         ;
 ;          |HALF_ADDER:ha2|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|multiplier_4x4:Mult|HALF_ADDER:ha2                                       ; HALF_ADDER             ; work         ;
 ;          |HALF_ADDER:ha3|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|multiplier_4x4:Mult|HALF_ADDER:ha3                                       ; HALF_ADDER             ; work         ;
-;       |mux_16_8_1:mux|                 ; 90 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux                                                           ; mux_16_8_1             ; work         ;
+;       |mux_16_8_1:mux|                 ; 87 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux                                                           ; mux_16_8_1             ; work         ;
 ;          |mux_8_3:\n16_bit:0:lsb:b2|   ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:0:lsb:b2                                 ; mux_8_3                ; work         ;
 ;             |mux_2_1:M2|               ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:0:lsb:b2|mux_2_1:M2                      ; mux_2_1                ; work         ;
 ;                |OR_2:O1|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:0:lsb:b2|mux_2_1:M2|OR_2:O1              ; OR_2                   ; work         ;
@@ -298,9 +298,9 @@ refer to the applicable agreement for further details.
 ;          |mux_8_3:\n16_bit:14:lsb:b2|  ; 6 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:14:lsb:b2                                ; mux_8_3                ; work         ;
 ;             |mux_2_1:M2|               ; 6 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:14:lsb:b2|mux_2_1:M2                     ; mux_2_1                ; work         ;
 ;                |OR_2:O1|               ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:14:lsb:b2|mux_2_1:M2|OR_2:O1             ; OR_2                   ; work         ;
-;          |mux_8_3:\n16_bit:15:lsb:b2|  ; 11 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2                                ; mux_8_3                ; work         ;
-;             |mux_2_1:M2|               ; 10 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_2_1:M2                     ; mux_2_1                ; work         ;
-;                |OR_2:O1|               ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_2_1:M2|OR_2:O1             ; OR_2                   ; work         ;
+;          |mux_8_3:\n16_bit:15:lsb:b2|  ; 9 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2                                ; mux_8_3                ; work         ;
+;             |mux_2_1:M2|               ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_2_1:M2                     ; mux_2_1                ; work         ;
+;                |OR_2:O1|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_2_1:M2|OR_2:O1             ; OR_2                   ; work         ;
 ;             |mux_4_2:M1|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_4_2:M1                     ; mux_4_2                ; work         ;
 ;                |mux_2_1:M0|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_4_2:M1|mux_2_1:M0          ; mux_2_1                ; work         ;
 ;                   |AND_2:A1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:15:lsb:b2|mux_4_2:M1|mux_2_1:M0|AND_2:A1 ; AND_2                  ; work         ;
@@ -353,9 +353,9 @@ refer to the applicable agreement for further details.
 ;             |mux_4_2:M0|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:6:lsb:b2|mux_4_2:M0                      ; mux_4_2                ; work         ;
 ;                |mux_2_1:M1|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:6:lsb:b2|mux_4_2:M0|mux_2_1:M1           ; mux_2_1                ; work         ;
 ;                   |AND_2:A1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:6:lsb:b2|mux_4_2:M0|mux_2_1:M1|AND_2:A1  ; AND_2                  ; work         ;
-;          |mux_8_3:\n16_bit:7:lsb:b2|   ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2                                 ; mux_8_3                ; work         ;
-;             |mux_2_1:M2|               ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_2_1:M2                      ; mux_2_1                ; work         ;
-;                |OR_2:O1|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_2_1:M2|OR_2:O1              ; OR_2                   ; work         ;
+;          |mux_8_3:\n16_bit:7:lsb:b2|   ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2                                 ; mux_8_3                ; work         ;
+;             |mux_2_1:M2|               ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_2_1:M2                      ; mux_2_1                ; work         ;
+;                |OR_2:O1|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_2_1:M2|OR_2:O1              ; OR_2                   ; work         ;
 ;             |mux_4_2:M0|               ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_4_2:M0                      ; mux_4_2                ; work         ;
 ;                |mux_2_1:M0|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_4_2:M0|mux_2_1:M0           ; mux_2_1                ; work         ;
 ;                   |OR_2:O1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|mux_16_8_1:mux|mux_8_3:\n16_bit:7:lsb:b2|mux_4_2:M0|mux_2_1:M0|OR_2:O1   ; OR_2                   ; work         ;
@@ -384,8 +384,6 @@ refer to the applicable agreement for further details.
 ;             |OR_2:inst7|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:13:b2|OR_2:inst7       ; OR_2                   ; work         ;
 ;          |FullAdder_NAND:\loops:14:b2| ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:14:b2                  ; FullAdder_NAND         ; work         ;
 ;             |OR_2:inst7|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:14:b2|OR_2:inst7       ; OR_2                   ; work         ;
-;          |FullAdder_NAND:\loops:15:b2| ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:15:b2                  ; FullAdder_NAND         ; work         ;
-;             |OR_2:inst7|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:15:b2|OR_2:inst7       ; OR_2                   ; work         ;
 ;          |FullAdder_NAND:\loops:1:b2|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:1:b2                   ; FullAdder_NAND         ; work         ;
 ;             |OR_2:inst7|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:1:b2|OR_2:inst7        ; OR_2                   ; work         ;
 ;             |XOR_2:inst2|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:1:b2|XOR_2:inst2       ; XOR_2                  ; work         ;
@@ -403,8 +401,9 @@ refer to the applicable agreement for further details.
 ;          |FullAdder_NAND:\loops:6:b2|  ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:6:b2                   ; FullAdder_NAND         ; work         ;
 ;             |OR_2:inst7|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:6:b2|OR_2:inst7        ; OR_2                   ; work         ;
 ;             |XOR_2:inst2|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:6:b2|XOR_2:inst2       ; XOR_2                  ; work         ;
-;          |FullAdder_NAND:\loops:7:b2|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:7:b2                   ; FullAdder_NAND         ; work         ;
+;          |FullAdder_NAND:\loops:7:b2|  ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:7:b2                   ; FullAdder_NAND         ; work         ;
 ;             |OR_2:inst7|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:7:b2|OR_2:inst7        ; OR_2                   ; work         ;
+;             |XOR_2:inst2|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:7:b2|XOR_2:inst2       ; XOR_2                  ; work         ;
 ;          |FullAdder_NAND:\loops:8:b2|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:8:b2                   ; FullAdder_NAND         ; work         ;
 ;             |OR_2:inst7|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:8:b2|OR_2:inst7        ; OR_2                   ; work         ;
 ;          |FullAdder_NAND:\loops:9:b2|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|alu:alu_m|n_bit_adder_subtractor:RCAS|FullAdder_NAND:\loops:9:b2                   ; FullAdder_NAND         ; work         ;
@@ -588,7 +587,7 @@ refer to the applicable agreement for further details.
 ;       |mux_4_2:\n16_bit:9:lsb:b2|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M4|mux_4_2:\n16_bit:9:lsb:b2                                            ; mux_4_2                ; work         ;
 ;          |mux_2_1:M2|                  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M4|mux_4_2:\n16_bit:9:lsb:b2|mux_2_1:M2                                 ; mux_2_1                ; work         ;
 ;             |OR_2:O1|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M4|mux_4_2:\n16_bit:9:lsb:b2|mux_2_1:M2|OR_2:O1                         ; OR_2                   ; work         ;
-;    |mux_16_4_1:M5|                     ; 50 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5                                                                      ; mux_16_4_1             ; work         ;
+;    |mux_16_4_1:M5|                     ; 49 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5                                                                      ; mux_16_4_1             ; work         ;
 ;       |mux_4_2:\n16_bit:0:lsb:b2|      ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:0:lsb:b2                                            ; mux_4_2                ; work         ;
 ;          |mux_2_1:M2|                  ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:0:lsb:b2|mux_2_1:M2                                 ; mux_2_1                ; work         ;
 ;             |OR_2:O1|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:0:lsb:b2|mux_2_1:M2|OR_2:O1                         ; OR_2                   ; work         ;
@@ -617,10 +616,9 @@ refer to the applicable agreement for further details.
 ;             |AND_2:A1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:14:lsb:b2|mux_2_1:M2|AND_2:A1                       ; AND_2                  ; work         ;
 ;             |AND_2:A2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:14:lsb:b2|mux_2_1:M2|AND_2:A2                       ; AND_2                  ; work         ;
 ;             |OR_2:O1|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:14:lsb:b2|mux_2_1:M2|OR_2:O1                        ; OR_2                   ; work         ;
-;       |mux_4_2:\n16_bit:15:lsb:b2|     ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2                                           ; mux_4_2                ; work         ;
-;          |mux_2_1:M2|                  ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2|mux_2_1:M2                                ; mux_2_1                ; work         ;
+;       |mux_4_2:\n16_bit:15:lsb:b2|     ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2                                           ; mux_4_2                ; work         ;
+;          |mux_2_1:M2|                  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2|mux_2_1:M2                                ; mux_2_1                ; work         ;
 ;             |AND_2:A1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2|mux_2_1:M2|AND_2:A1                       ; AND_2                  ; work         ;
-;             |AND_2:A2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2|mux_2_1:M2|AND_2:A2                       ; AND_2                  ; work         ;
 ;             |OR_2:O1|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:15:lsb:b2|mux_2_1:M2|OR_2:O1                        ; OR_2                   ; work         ;
 ;       |mux_4_2:\n16_bit:1:lsb:b2|      ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:1:lsb:b2                                            ; mux_4_2                ; work         ;
 ;          |mux_2_1:M2|                  ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mux_16_4_1:M5|mux_4_2:\n16_bit:1:lsb:b2|mux_2_1:M2                                 ; mux_2_1                ; work         ;
@@ -1102,11 +1100,11 @@ Encoding Type:  One-Hot
 ;     ENA CLR SLD       ; 8                           ;
 ;     SCLR              ; 3                           ;
 ;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 1626                        ;
-;     normal            ; 1626                        ;
+; cycloneiii_lcell_comb ; 1624                        ;
+;     normal            ; 1624                        ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 19                          ;
-;         3 data inputs ; 164                         ;
+;         3 data inputs ; 162                         ;
 ;         4 data inputs ; 1441                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 23.00                       ;
@@ -1119,7 +1117,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -1129,7 +1127,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 03 04:23:33 2024
+    Info: Processing started: Thu Dec 05 00:07:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory -c memory
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1257,14 +1255,14 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "mem_init_addr[13]" File: C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd Line: 11
     Warning (15610): No output dependent on input pin "mem_init_addr[14]" File: C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd Line: 11
     Warning (15610): No output dependent on input pin "mem_init_addr[15]" File: C:/Users/manan/Documents/EE214/EE224_CPU/top.vhd Line: 11
-Info (21057): Implemented 3035 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3033 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 199 output pins
-    Info (21061): Implemented 2801 logic cells
+    Info (21061): Implemented 2799 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Tue Dec 03 04:23:53 2024
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Thu Dec 05 00:08:27 2024
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:00:21
 
 

@@ -88,7 +88,7 @@ begin
 	result <= result_t;
 	
 	RCAS : n_bit_adder_subtractor port map (a => a, b => b, m => alu_ctrl(1), s => t5, c_out => c_temp);
-	c <= c_temp and (not (alu_ctrl(2) or alu_ctrl(1) or alu_ctrl(0)));
+	c <= c_temp and (not (alu_ctrl(2) or alu_ctrl(0)));
 	Mult : multiplier_4x4 port map (a => a(3 downto 0), b => b(3 downto 0), m => t6);
 	
 	mux : mux_16_8_1 port map(a => t5, b => x"0000", c => t7, d => t6, e => t1, f => t2, g => t3, h => t4, sel => alu_ctrl, Y => result_t);
